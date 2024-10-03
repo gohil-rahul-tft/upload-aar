@@ -13,14 +13,14 @@
 
   <repositories>
 
-  <repository>
+  <!-- <repository>
     <id>google</id>
     <url>https://maven.google.com</url>
   </repository>
     <repository>
     <id>mavenCentral</id>
     <url>https://repo.maven.apache.org/maven2/</url>
-  </repository>
+  </repository> -->
 
      <repository>
         <id>volcengine</id>
