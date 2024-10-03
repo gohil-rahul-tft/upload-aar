@@ -12,10 +12,10 @@
   <version>1.0</version>
 
   <repositories>
-  <repository>
+  <!-- <repository>
     <id>mavenCentral</id>
     <url>https://repo.maven.apache.org/maven2/</url>
-  </repository>
+  </repository> -->
   <repository>
     <id>google</id>
     <url>https://maven.google.com</url>
