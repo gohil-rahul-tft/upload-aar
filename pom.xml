@@ -1,70 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- This module was also published with a richer model, Gradle metadata,  -->
-  <!-- which should be used instead. Do not delete the following line which  -->
-  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
-  <!-- that they should prefer consuming it instead. -->
-  <!-- do_not_remove: published-with-gradle-metadata -->
+  
+  <!-- Metadata -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example.my_flutter_module</groupId>
-  <artifactId>flutter_debug</artifactId>
+  <artifactId>flutter_release</artifactId>
   <version>1.0</version>
+  <packaging>aar</packaging>
 
+  <!-- Repositories -->
   <repositories>
-
-  <!-- <repository>
-    <id>google</id>
-    <url>https://maven.google.com</url>
-  </repository>
-    <repository>
-    <id>mavenCentral</id>
-    <url>https://repo.maven.apache.org/maven2/</url>
-  </repository> -->
-
      <repository>
-        <id>volcengine</id>
-        <url>https://artifact.bytedance.com/repository/Volcengine</url>
-    </repository>
+       <id>google</id>
+       <url>https://maven.google.com/</url>
+     </repository>
+     <repository>
+       <id>mavenCentral</id>
+       <url>https://repo.maven.apache.org/maven2/</url>
+     </repository>
+     <repository>
+       <id>flutter</id>
+       <url>https://storage.googleapis.com/download.flutter.io</url>
+     </repository>
+  </repositories>
 
-  <!-- <repository>
-    <id>flutter</id>
-    <url>https://storage.googleapis.com/download.flutter.io</url>
-  </repository> -->
-</repositories>
-
-
-
-  <!-- <packaging>aar</packaging> -->
+  <!-- Dependencies -->
   <dependencies>
-
-
- 
+    <!-- Flutter Embedding -->
     <dependency>
         <groupId>io.flutter</groupId>
         <artifactId>flutter_embedding_debug</artifactId>
-        <version>1.0.0-dbec018f4d83ae4b7b97eb8c5a066c61832e12df</version>
-        <!-- <scope>compile</scope> -->
+        <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version>
+        <scope>compile</scope>
     </dependency>
 
-
-    <!-- <dependency>
-      <groupId>io.flutter</groupId>
-      <artifactId>armeabi_v7a_release</artifactId>
-      <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version>
-      <scope>compile</scope>
+    <!-- AndroidX Dependencies -->
+    <dependency>
+      <groupId>androidx.lifecycle</groupId>
+      <artifactId>lifecycle-runtime</artifactId>
+      <version>2.2.0</version>
     </dependency>
     <dependency>
-      <groupId>io.flutter</groupId>
-      <artifactId>arm64_v8a_release</artifactId>
-      <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version>
-      <scope>compile</scope>
+      <groupId>androidx.fragment</groupId>
+      <artifactId>fragment</artifactId>
+      <version>1.1.0</version>
     </dependency>
     <dependency>
-      <groupId>io.flutter</groupId>
-      <artifactId>x86_64_release</artifactId>
-      <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version>
-      <scope>compile</scope>
-    </dependency> -->
+      <groupId>androidx.tracing</groupId>
+      <artifactId>tracing</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>androidx.core</groupId>
+      <artifactId>core</artifactId>
+      <version>1.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>androidx.window</groupId>
+      <artifactId>window-java</artifactId>
+      <version>1.0.0-beta04</version>
+    </dependency>
   </dependencies>
+  
 </project>
