@@ -7,7 +7,6 @@
   <groupId>com.example.my_flutter_module</groupId>
   <artifactId>flutter_release</artifactId>
   <version>1.0</version>
-  <packaging>aar</packaging>
 
   <!-- Repositories -->
   <repositories>
