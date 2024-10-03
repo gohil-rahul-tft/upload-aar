@@ -36,7 +36,7 @@
       <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version>
       <scope>compile</scope>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>io.flutter</groupId>
       <artifactId>armeabi_v7a_release</artifactId>
       <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version>
@@ -53,6 +53,6 @@
       <artifactId>x86_64_release</artifactId>
       <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version>
       <scope>compile</scope>
-    </dependency>
+    </dependency> -->
   </dependencies>
 </project>
