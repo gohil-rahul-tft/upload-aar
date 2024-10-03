@@ -10,6 +10,15 @@
   <groupId>com.example.my_flutter_module</groupId>
   <artifactId>flutter_release</artifactId>
   <version>1.0</version>
+
+  <repositories>
+    <repository>
+        <id>flutter</id>
+        <url>https://storage.googleapis.com/download.flutter.io</url>
+    </repository>
+  </repositories>
+
+
   <!-- <packaging>aar</packaging> -->
   <dependencies>
     <dependency>
