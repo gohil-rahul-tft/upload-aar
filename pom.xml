@@ -12,13 +12,14 @@
   <version>1.0</version>
 
   <repositories>
-  <!-- <repository>
-    <id>mavenCentral</id>
-    <url>https://repo.maven.apache.org/maven2/</url>
-  </repository> -->
+
   <repository>
     <id>google</id>
     <url>https://maven.google.com</url>
+  </repository>
+    <repository>
+    <id>mavenCentral</id>
+    <url>https://repo.maven.apache.org/maven2/</url>
   </repository>
   <repository>
     <id>flutter</id>
@@ -33,8 +34,30 @@
     <dependency>
       <groupId>io.flutter</groupId>
       <artifactId>flutter_embedding_release</artifactId>
-      <!-- <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version> -->
+      <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+            <groupId>androidx.lifecycle</groupId>
+            <artifactId>lifecycle-runtime</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>androidx.fragment</groupId>
+            <artifactId>fragment</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>androidx.tracing</groupId>
+            <artifactId>tracing</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>androidx.core</groupId>
+            <artifactId>core</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>androidx.window</groupId>
+            <artifactId>window-java</artifactId>
+        </exclusion>
+    </exclusions>
     </dependency>
     <!-- <dependency>
       <groupId>io.flutter</groupId>
