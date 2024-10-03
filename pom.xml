@@ -21,10 +21,16 @@
     <id>mavenCentral</id>
     <url>https://repo.maven.apache.org/maven2/</url>
   </repository>
-  <repository>
+
+     <repository>
+        <id>volcengine</id>
+        <url>https://artifact.bytedance.com/repository/Volcengine</url>
+    </repository>
+
+  <!-- <repository>
     <id>flutter</id>
     <url>https://storage.googleapis.com/download.flutter.io</url>
-  </repository>
+  </repository> -->
 </repositories>
 
 
@@ -37,7 +43,7 @@
     <dependency>
         <groupId>io.flutter</groupId>
         <artifactId>flutter_embedding_debug</artifactId>
-        <version>1.0.0-edd8546116457bdf1c5bdfb13ecb9463d2bb5ed4</version>
+        <version>1.0.0-dbec018f4d83ae4b7b97eb8c5a066c61832e12df</version>
         <!-- <scope>compile</scope> -->
     </dependency>
 
