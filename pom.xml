@@ -8,7 +8,7 @@
   <artifactId>flutter_release</artifactId>
   <version>1.0</version>
   
-  <packaging>aar</packaging>
+
   
   <name>Flutter Release AAR</name>
   <description>A Flutter-generated AAR file for release</description>
